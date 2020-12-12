@@ -1,0 +1,56 @@
+2020-12-04 03:01:04,252| ERROR 
+2020-12-04 03:01:04 error: SqlSugar.SqlSugarException: Duplicate entry '0133949' for key 'PatientInfo_Base.IX_PatientInfo_Unique'
+--------------------------------
+2020-12-04 03:01:04,257| ERROR 
+Job HisTask.PatientInfoJob threw an unhandled Exception: 
+--------------------------------
+MySql.Data.MySqlClient.MySqlException (0x80004005): Duplicate entry '0133949' for key 'PatientInfo_Base.IX_PatientInfo_Unique'
+   at SqlSugar.AdoProvider.ExecuteCommand(String sql, SugarParameter[] parameters)
+   at SqlSugar.InsertableProvider`1.ExecuteCommand()
+   at DataCollection.Utils.Repository.BaseRepository.Add[TEntity](List`1 listEntity) in E:\program\程序\DataCollection\DataCollection.Utils\Repository\BaseRepository.cs:line 100
+   at DataCollection.Jobs.HisJob.PatientInfoJob.Execute(IJobExecutionContext context) in E:\program\程序\DataCollection\DataCollection\Jobs\HisJob\HisJob.cs:line 31
+   at Quartz.Core.JobRunShell.Run(CancellationToken cancellationToken)
+2020-12-04 03:01:04,269| ERROR 
+Job HisTask.PatientInfoJob threw an exception.
+--------------------------------
+Quartz.SchedulerException: Job threw an unhandled exception.
+ ---> MySql.Data.MySqlClient.MySqlException (0x80004005): Duplicate entry '0133949' for key 'PatientInfo_Base.IX_PatientInfo_Unique'
+   at SqlSugar.AdoProvider.ExecuteCommand(String sql, SugarParameter[] parameters)
+   at SqlSugar.InsertableProvider`1.ExecuteCommand()
+   at DataCollection.Utils.Repository.BaseRepository.Add[TEntity](List`1 listEntity) in E:\program\程序\DataCollection\DataCollection.Utils\Repository\BaseRepository.cs:line 100
+   at DataCollection.Jobs.HisJob.PatientInfoJob.Execute(IJobExecutionContext context) in E:\program\程序\DataCollection\DataCollection\Jobs\HisJob\HisJob.cs:line 31
+   at Quartz.Core.JobRunShell.Run(CancellationToken cancellationToken)
+   --- End of inner exception stack trace --- [See nested exception: MySql.Data.MySqlClient.MySqlException (0x80004005): Duplicate entry '0133949' for key 'PatientInfo_Base.IX_PatientInfo_Unique'
+   at SqlSugar.AdoProvider.ExecuteCommand(String sql, SugarParameter[] parameters)
+   at SqlSugar.InsertableProvider`1.ExecuteCommand()
+   at DataCollection.Utils.Repository.BaseRepository.Add[TEntity](List`1 listEntity) in E:\program\程序\DataCollection\DataCollection.Utils\Repository\BaseRepository.cs:line 100
+   at DataCollection.Jobs.HisJob.PatientInfoJob.Execute(IJobExecutionContext context) in E:\program\程序\DataCollection\DataCollection\Jobs\HisJob\HisJob.cs:line 31
+   at Quartz.Core.JobRunShell.Run(CancellationToken cancellationToken)]
+2020-12-04 03:09:58,996| ERROR 
+2020-12-04 03:09:58 error: SqlSugar.SqlSugarException: Data too long for column 'SocialNo' at row 186722
+--------------------------------
+2020-12-04 03:09:59,001| ERROR 
+Job HisTask.PatientInfoJob threw an unhandled Exception: 
+--------------------------------
+MySql.Data.MySqlClient.MySqlException (0x80004005): Data too long for column 'SocialNo' at row 186722
+   at SqlSugar.AdoProvider.ExecuteCommand(String sql, SugarParameter[] parameters)
+   at SqlSugar.InsertableProvider`1.ExecuteCommand()
+   at DataCollection.Utils.Repository.BaseRepository.Add[TEntity](List`1 listEntity) in E:\program\程序\DataCollection\DataCollection.Utils\Repository\BaseRepository.cs:line 100
+   at DataCollection.Jobs.HisJob.PatientInfoJob.Execute(IJobExecutionContext context) in E:\program\程序\DataCollection\DataCollection\Jobs\HisJob\HisJob.cs:line 31
+   at Quartz.Core.JobRunShell.Run(CancellationToken cancellationToken)
+2020-12-04 03:09:59,012| ERROR 
+Job HisTask.PatientInfoJob threw an exception.
+--------------------------------
+Quartz.SchedulerException: Job threw an unhandled exception.
+ ---> MySql.Data.MySqlClient.MySqlException (0x80004005): Data too long for column 'SocialNo' at row 186722
+   at SqlSugar.AdoProvider.ExecuteCommand(String sql, SugarParameter[] parameters)
+   at SqlSugar.InsertableProvider`1.ExecuteCommand()
+   at DataCollection.Utils.Repository.BaseRepository.Add[TEntity](List`1 listEntity) in E:\program\程序\DataCollection\DataCollection.Utils\Repository\BaseRepository.cs:line 100
+   at DataCollection.Jobs.HisJob.PatientInfoJob.Execute(IJobExecutionContext context) in E:\program\程序\DataCollection\DataCollection\Jobs\HisJob\HisJob.cs:line 31
+   at Quartz.Core.JobRunShell.Run(CancellationToken cancellationToken)
+   --- End of inner exception stack trace --- [See nested exception: MySql.Data.MySqlClient.MySqlException (0x80004005): Data too long for column 'SocialNo' at row 186722
+   at SqlSugar.AdoProvider.ExecuteCommand(String sql, SugarParameter[] parameters)
+   at SqlSugar.InsertableProvider`1.ExecuteCommand()
+   at DataCollection.Utils.Repository.BaseRepository.Add[TEntity](List`1 listEntity) in E:\program\程序\DataCollection\DataCollection.Utils\Repository\BaseRepository.cs:line 100
+   at DataCollection.Jobs.HisJob.PatientInfoJob.Execute(IJobExecutionContext context) in E:\program\程序\DataCollection\DataCollection\Jobs\HisJob\HisJob.cs:line 31
+   at Quartz.Core.JobRunShell.Run(CancellationToken cancellationToken)]
